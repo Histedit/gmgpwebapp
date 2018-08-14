@@ -1,61 +1,63 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <title>Calendar</title>
-    <!--
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    -->
-</head>
-<body>
-		<header>
-				<div id="memberInfo">회원정보</div>
-				<div id="logo">로고</div>
-				<div id="navContainer">
-					<div id="home" class="headerMenu" >홈</div>
-					<div id="notive" class="headerMenu">공지사항</div>
-					<div id="calendar" class="headerMenu">캘린더</div>
-					<div id="report" class="headerMenu">일지</div>
-					<div id="member" class="headerMenu">멤버</div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<title>Calendar</title>
+		<!--
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<script src="main.js"></script>
+		-->
+		<link rel="stylesheet" type="text/css" href="main.css" />
+	</head>
+	<body>
+			<header>
+					<div id="memberInfo">회원정보</div>
+					<div id="logo">로고</div>
+					<div id="navContainer">
+						<div id="home" class="headerMenu" >홈</div>
+						<div id="notive" class="headerMenu">공지사항</div>
+						<div id="calendar" class="headerMenu">캘린더</div>
+						<div id="report" class="headerMenu">일지</div>
+						<div id="member" class="headerMenu">멤버</div>
+					</div>
+				</header>
+
+
+
+		<div class="Content">
+			<div id="name">일정관리</div>
+			<div class="toDolist">
+				<div id="titleTdl">To DO List</div>
+				<div id="boxTdl">form 박스안에 체크박스+이름+스크롤로 높이 고정</div>
+				<div id="addTdl">
+					<form action="">
+						<div class="write_list"><input type="text" name="toDo"></div>
+						<div class="btn_add"><input type="button" value="추가"></div>
+					</form>
 				</div>
-			</header>
-
-
-
-    <div class="Content">
-        <div id="name">일정관리</div>
-        <div class="toDolist">
-            <div id="titleTdl">To DO List</div>
-            <div id="boxTdl">form 박스안에 체크박스+이름+스크롤로 높이 고정</div>
-            <div id="addTdl">
-                <form action="">
-                    <div class="write_list"><input type="text" name="toDo"></div>
-                    <div class="btn_add"><input type="button" value="추가"></div>
-                </form>
-            </div>
-        </div>
-        <div class="Calendar">
-            <!--깡자바스크립트로 할거니 아니면 moment.js 같은 라이브러리를 사용할거니-->달력이 들어갈 구간
-            <table class="calendar">
-                <tr>
-                    <td>◀</td>
-                    <td>y년  m월</td>
-                    <td>▶</td>
-                </tr>
-                <tr>
-                    <td>일</td>
-                    <td>월</td>
-                    <td>화</td>
-                    <td>수</td>
-                    <td>목</td>
-                    <td>금</td>
-                    <td>토</td>
-                </tr>
-            </table>
-        </div>
-    </div>
-</body>
+			</div>
+			<div class="Calendar">
+				<!--깡자바스크립트로 할거니 아니면 moment.js 같은 라이브러리를 사용할거니-->달력이 들어갈 구간
+				<table class="calendar">
+					<tr>
+						<td>◀</td>
+						<td>y년  m월</td>
+						<td>▶</td>
+					</tr>
+					<tr>
+						<td>일</td>
+						<td>월</td>
+						<td>화</td>
+						<td>수</td>
+						<td>목</td>
+						<td>금</td>
+						<td>토</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</body>
 </html>
