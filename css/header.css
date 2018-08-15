@@ -1,0 +1,112 @@
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+	position: relative;
+	margin: 0;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background: #eee; 
+
+}
+header{
+	width: 100%;
+	height: 8%;
+	background: #fff; 
+	position: relative;
+	float: left;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	header{
+		height: 10%;
+	}
+}
+
+#memberInfo{
+	width: 17%;
+	text-align: right;
+
+	position: fixed;
+	top:10px;
+	right:10px;
+
+}
+
+#logoContainer{
+	width: 30%;
+	height: 100%;
+	float: left;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	#logoContainer{
+	width: 100%;
+	height: 30%;
+	}
+}
+
+
+#logo{
+	width: 100%;
+	height: 100%;
+
+	background: url('https://www.google.co.kr/logos/doodles/2018/national-liberation-day-of-korea-2018-5697243024719872-law.gif');
+	background-size: contain;
+	background-repeat: no-repeat;
+
+	float: left;
+}
+@media (min-width: 481px) and (max-width: 767px) {
+	#logo{
+		width: 100%;
+		height: 5%;
+
+		align-content: center;
+
+		position: fixed;
+
+		background: url('https://www.google.co.kr/logos/doodles/2018/national-liberation-day-of-korea-2018-5697243024719872-law.gif');
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position:center; 
+
+		float: left;
+	}
+}
+
+
+#navContainer{ width: 60%; height: 10%; margin-top: 20px; float: left}
+#navContainer div{
+	width: 18%;
+	height: auto;
+	float: left;
+	margin-right: calc(10% / 6);
+	text-align: center;
+}
+#navContainer div:first-of-type{ margin-left: calc(10% / 6) }
+#navContainer div:nth-of-type(1){ background: #666 }
+#navContainer div:nth-of-type(2){ background: #999 }
+#navContainer div:nth-of-type(3){ background: #aaa }
+#navContainer div:nth-of-type(4){ background: #ccc }
+#navContainer div:nth-of-type(5){ background: #ddd }
+
+@media (min-width: 481px) and (max-width: 767px) {
+	#navContainer{ width: 100%; height: inherit; margin-top: 20px; }
+	#navContainer div{
+		width: 18%;
+		height: auto;
+		float: left;
+		margin-right: calc(10% / 6);
+		text-align: center;
+	}
+	#navContainer div:first-of-type{ margin-left: calc(10% / 6) }
+	#navContainer div:nth-of-type(1){ background: #666 }
+	#navContainer div:nth-of-type(2){ background: #999 }
+	#navContainer div:nth-of-type(3){ background: #aaa }
+	#navContainer div:nth-of-type(4){ background: #ccc }
+	#navContainer div:nth-of-type(5){ background: #ddd }
+}
+
+.report{ float: left; }

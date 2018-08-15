@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
-    <title>write report</title>
-    <!--
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    -->
-</head>
-<body>
-        <header>
-				<div id="memberInfo">회원정보</div>
-				<div id="logo">로고</div>
-				<div id="navContainer">
-					<div id="home" class="headerMenu" >홈</div>
-					<div id="notive" class="headerMenu">공지사항</div>
-					<div id="calendar" class="headerMenu">캘린더</div>
-					<div id="report" class="headerMenu">일지</div>
-					<div id="member" class="headerMenu">멤버</div>
-				</div>
-			</header>
-
-    
-    <div class="name">글쓰기</div>
-    <div class="editor">
-        <div class="editor_title">
-            <h1 id="editor_title" contenteditable="true">제목을 입력하세요</h1>
-        </div>
-        <div class="editor_body">
-            <p id="editor_body" contenteditable="true">내용을 입력하세요<br></p>
-            <div class="side_btn">
-                <div class="side btn_img">
-                    <button type="button" >사진추가</button>
-                </div>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="./css/header.css" />
+		<title>write report</title>
+		<!--
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+		<script src="main.js"></script>
+		-->
+	</head>
+	<body>
+		<header>
+			<div id="logoContainer">
+				<div id="logo"></div>
+			</div>
+            <div id="navContainer">
+                <a href="./home.html"><div id="home" class="headerMenu">홈</div></a>
+				<a href="./Notice.html"><div id="notice" class="headerMenu">공지사항</div></a>
+				<a href="./Calendar.html"><div id="calendar" class="headerMenu">캘린더</div></a>
+				<a href="./ReportPost.html"><div id="report" class="headerMenu">일지</div></a>
+				<a href="./Member.html"><div id="member" class="headerMenu">멤버</div></a>            
             </div>
-        </div>
-        <div class="write_Report">
-            <form action="" class="write">
-                <input type="button" value="일지글쓰기">
-            </form>
-        </div>
-    </div>
+			<div id="memberInfo">회원정보</div>
+        </header>
 
-</body>
+
+		<div class="name">글쓰기</div>
+		<div class="editor">
+			<div class="editor_title">
+				<h1 id="editor_title" contenteditable="true">제목을 입력하세요</h1>
+			</div>
+			<div class="editor_body">
+				<p id="editor_body" contenteditable="true">내용을 입력하세요<br></p>
+				<div class="side_btn">
+					<div class="side btn_img">
+						<button type="button" >사진추가</button>
+					</div>
+				</div>
+			</div>
+			<div class="write_Report">
+				<form action="" class="write">
+					<input type="button" value="일지글쓰기">
+				</form>
+			</div>
+		</div>
+
+	</body>
 </html>
